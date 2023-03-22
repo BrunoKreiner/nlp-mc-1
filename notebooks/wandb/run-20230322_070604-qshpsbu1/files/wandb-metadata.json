@@ -1,0 +1,49 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.10.6",
+    "heartbeatAt": "2023-03-22T06:06:05.750234",
+    "startedAt": "2023-03-22T06:06:04.996235",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/BrunoKreiner/nlp-mc-1.git",
+        "commit": "47282d9a92a985a02b542b2836731591e182411e"
+    },
+    "email": "brunokreiner@hotmail.ch",
+    "root": "Z:/npr/nlp-mc-1",
+    "host": "DESKTOP-53RF3S5",
+    "username": "bruno",
+    "executable": "c:\\Users\\bruno\\anaconda3\\envs\\edap5\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 4104.0,
+        "min": 0.0,
+        "max": 4104.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4104.0,
+            "min": 0.0,
+            "max": 4104.0
+        }
+    ],
+    "disk": {
+        "total": 953.8525352478027,
+        "used": 865.4875259399414
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 23.923526763916016
+    }
+}
