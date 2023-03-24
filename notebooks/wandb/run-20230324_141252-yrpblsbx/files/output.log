@@ -1,0 +1,35 @@
+Some weights of the model checkpoint at distilbert-base-uncased were not used when initializing DistilBertForSequenceClassification: ['vocab_projector.weight', 'vocab_layer_norm.weight', 'vocab_transform.bias', 'vocab_layer_norm.bias', 'vocab_projector.bias', 'vocab_transform.weight']
+- This IS expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.weight', 'pre_classifier.weight', 'pre_classifier.bias', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+c:\Users\bruno\.conda\envs\my_env\lib\site-packages\transformers\optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+***** Running training *****
+  Num examples = 19052
+  Num Epochs = 4
+  Instantaneous batch size per device = 16
+  Total train batch size (w. parallel, distributed & accumulation) = 16
+  Gradient Accumulation steps = 1
+  Total optimization steps = 4764
+  Number of trainable parameters = 66955010
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+  0%|          | 0/4764 [00:00<?, ?it/s]
+                       id                                             lyrics  \
+0  1FAmKoufyAXMfzPPs9bsjA  i tied my bandana took my pack from the floor ...
+1  3QvPEv8XjHa73iYhaienWw  i want to live on the moon never see a human a...
+2  5VPFATm85G3P04Q5g8yxqr  bitch you know you can t parallel park anyway ...
+3  7J2jCftItt7htcOUdcMnpt  graceless falling slipping in the cold with no...
+4  4cBPzVIbDIQx0LIyauFAy0  madame morse estate stood five hundred years p...
+       artist_name most_common_genre  \
+0  Waylon Jennings           country
+1   Phantom Planet              rock
+2    Isaiah Rashad           hip-hop
+3     Matt Pond PA             indie
+4       Ariel Pink               pop
+                                          genre_list
+0  ['country', 'country', 'rock', 'outlaw', 'coun...
+1                                    ['pop', 'rock']
+2  ['hip-hop', 'rap', 'tennessee', 'hip-hop', 'un...
+3                                ['philly', 'indie']
+4  ['art', 'pop', 'chillwave', 'dream', 'pop', 'e...

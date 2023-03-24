@@ -1,0 +1,15 @@
+artifact_uri: file:///z:/npr/nlp-mc-1/notebooks/mlruns/0/b2d0fdbbdc054f4fa524d37e03b925d3/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b2d0fdbbdc054f4fa524d37e03b925d3
+run_name: ../models/fine-tune/
+run_uuid: b2d0fdbbdc054f4fa524d37e03b925d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679664010368
+status: 1
+tags: []
+user_id: bruno

@@ -1,0 +1,69 @@
+2023-03-24 14:21:25,616 INFO    StreamThr :22948 [internal.py:wandb_internal():87] W&B internal server running at pid: 22948, started at: 2023-03-24 14:21:25.615689
+2023-03-24 14:21:25,617 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: status
+2023-03-24 14:21:25,618 INFO    WriterThread:22948 [datastore.py:open_for_write():85] open: z:\npr\nlp-mc-1\notebooks\wandb\run-20230324_142120-nsmulfq6\run-nsmulfq6.wandb
+2023-03-24 14:21:25,619 DEBUG   SenderThread:22948 [sender.py:send():336] send: header
+2023-03-24 14:21:25,619 DEBUG   SenderThread:22948 [sender.py:send():336] send: run
+2023-03-24 14:21:26,053 INFO    SenderThread:22948 [dir_watcher.py:__init__():219] watching files in: z:\npr\nlp-mc-1\notebooks\wandb\run-20230324_142120-nsmulfq6\files
+2023-03-24 14:21:26,054 INFO    SenderThread:22948 [sender.py:_start_run_threads():1078] run started: nsmulfq6 with start time 1679664084.61469
+2023-03-24 14:21:26,054 DEBUG   SenderThread:22948 [sender.py:send_request():363] send_request: summary_record
+2023-03-24 14:21:26,054 INFO    SenderThread:22948 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-24 14:21:26,057 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: check_version
+2023-03-24 14:21:26,057 DEBUG   SenderThread:22948 [sender.py:send_request():363] send_request: check_version
+2023-03-24 14:21:26,196 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: run_start
+2023-03-24 14:21:26,209 DEBUG   HandlerThread:22948 [system_info.py:__init__():31] System info init
+2023-03-24 14:21:26,209 DEBUG   HandlerThread:22948 [system_info.py:__init__():46] System info init done
+2023-03-24 14:21:26,209 INFO    HandlerThread:22948 [system_monitor.py:start():183] Starting system monitor
+2023-03-24 14:21:26,210 INFO    SystemMonitor:22948 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-24 14:21:26,210 INFO    HandlerThread:22948 [system_monitor.py:probe():204] Collecting system info
+2023-03-24 14:21:26,210 INFO    SystemMonitor:22948 [interfaces.py:start():187] Started cpu monitoring
+2023-03-24 14:21:26,214 INFO    SystemMonitor:22948 [interfaces.py:start():187] Started disk monitoring
+2023-03-24 14:21:26,214 INFO    SystemMonitor:22948 [interfaces.py:start():187] Started gpu monitoring
+2023-03-24 14:21:26,215 INFO    SystemMonitor:22948 [interfaces.py:start():187] Started memory monitoring
+2023-03-24 14:21:26,222 DEBUG   HandlerThread:22948 [system_info.py:probe():195] Probing system
+2023-03-24 14:21:26,222 INFO    SystemMonitor:22948 [interfaces.py:start():187] Started network monitoring
+2023-03-24 14:21:26,229 DEBUG   HandlerThread:22948 [system_info.py:_probe_git():180] Probing git
+2023-03-24 14:21:26,291 DEBUG   HandlerThread:22948 [system_info.py:_probe_git():188] Probing git done
+2023-03-24 14:21:26,291 DEBUG   HandlerThread:22948 [system_info.py:probe():240] Probing system done
+2023-03-24 14:21:26,292 DEBUG   HandlerThread:22948 [system_monitor.py:probe():213] {'os': 'Windows-10-10.0.22000-SP0', 'python': '3.9.16', 'heartbeatAt': '2023-03-24T13:21:26.228145', 'startedAt': '2023-03-24T13:21:20.049688', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/BrunoKreiner/nlp-mc-1.git', 'commit': '46e2c4ec1e0cf869072b6ded1616131b0408d474'}, 'email': 'brunokreiner@hotmail.ch', 'root': 'Z:/npr/nlp-mc-1', 'host': 'DESKTOP-53RF3S5', 'username': 'bruno', 'executable': 'c:\\Users\\bruno\\.conda\\envs\\my_env\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 4104.0, 'min': 0.0, 'max': 4104.0}, 'cpu_freq_per_core': [{'current': 4104.0, 'min': 0.0, 'max': 4104.0}], 'disk': {'total': 953.8525352478027, 'used': 875.9410057067871}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 23.923526763916016}}
+2023-03-24 14:21:26,292 INFO    HandlerThread:22948 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-24 14:21:26,292 INFO    HandlerThread:22948 [system_monitor.py:probe():217] Publishing system info
+2023-03-24 14:21:26,292 DEBUG   HandlerThread:22948 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-24 14:21:26,292 DEBUG   HandlerThread:22948 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-24 14:21:26,292 DEBUG   HandlerThread:22948 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-24 14:21:26,295 ERROR   HandlerThread:22948 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] Das System kann die angegebene Datei nicht finden
+Traceback (most recent call last):
+  File "c:\Users\bruno\.conda\envs\my_env\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "c:\Users\bruno\.conda\envs\my_env\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "c:\Users\bruno\.conda\envs\my_env\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\Users\bruno\.conda\envs\my_env\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] Das System kann die angegebene Datei nicht finden
+2023-03-24 14:21:26,295 DEBUG   HandlerThread:22948 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-24 14:21:26,295 INFO    HandlerThread:22948 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-24 14:21:26,296 DEBUG   SenderThread:22948 [sender.py:send():336] send: files
+2023-03-24 14:21:26,296 INFO    SenderThread:22948 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-24 14:21:26,307 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-24 14:21:26,308 DEBUG   SenderThread:22948 [sender.py:send_request():363] send_request: stop_status
+2023-03-24 14:21:26,496 DEBUG   SenderThread:22948 [sender.py:send():336] send: telemetry
+2023-03-24 14:21:26,906 INFO    wandb-upload_0:22948 [upload_job.py:push():138] Uploaded file C:\Users\bruno\AppData\Local\Temp\tmp2opo9lcgwandb\nfulpkbi-wandb-metadata.json
+2023-03-24 14:21:27,067 INFO    Thread-35 :22948 [dir_watcher.py:_on_file_created():278] file/dir created: z:\npr\nlp-mc-1\notebooks\wandb\run-20230324_142120-nsmulfq6\files\wandb-summary.json
+2023-03-24 14:21:27,067 INFO    Thread-35 :22948 [dir_watcher.py:_on_file_created():278] file/dir created: z:\npr\nlp-mc-1\notebooks\wandb\run-20230324_142120-nsmulfq6\files\requirements.txt
+2023-03-24 14:21:27,067 INFO    Thread-35 :22948 [dir_watcher.py:_on_file_created():278] file/dir created: z:\npr\nlp-mc-1\notebooks\wandb\run-20230324_142120-nsmulfq6\files\wandb-metadata.json
+2023-03-24 14:21:27,067 INFO    Thread-35 :22948 [dir_watcher.py:_on_file_created():278] file/dir created: z:\npr\nlp-mc-1\notebooks\wandb\run-20230324_142120-nsmulfq6\files\conda-environment.yaml
+2023-03-24 14:21:28,078 INFO    Thread-35 :22948 [dir_watcher.py:_on_file_created():278] file/dir created: z:\npr\nlp-mc-1\notebooks\wandb\run-20230324_142120-nsmulfq6\files\output.log
+2023-03-24 14:21:30,104 INFO    Thread-35 :22948 [dir_watcher.py:_on_file_modified():295] file/dir modified: z:\npr\nlp-mc-1\notebooks\wandb\run-20230324_142120-nsmulfq6\files\output.log
+2023-03-24 14:21:31,512 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 14:21:36,548 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 14:21:41,318 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-24 14:21:41,318 DEBUG   SenderThread:22948 [sender.py:send_request():363] send_request: stop_status
+2023-03-24 14:21:42,532 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 14:21:47,581 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 14:21:52,626 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 14:21:56,318 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-24 14:21:56,318 DEBUG   SenderThread:22948 [sender.py:send_request():363] send_request: stop_status
+2023-03-24 14:21:58,536 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: status_report
+2023-03-24 14:21:59,328 INFO    Thread-35 :22948 [dir_watcher.py:_on_file_modified():295] file/dir modified: z:\npr\nlp-mc-1\notebooks\wandb\run-20230324_142120-nsmulfq6\files\config.yaml
+2023-03-24 14:22:03,770 DEBUG   HandlerThread:22948 [handler.py:handle_request():144] handle_request: status_report
