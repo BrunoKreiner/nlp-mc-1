@@ -1,0 +1,15 @@
+torch
+tensorflow
+keras
+sklearn
+pandas
+numpy
+seaborn
+matplotlib
+nlpaug
+transformers
+sentence-transformers
+nltk
+contractions
+lightgbm
+tqdm
