@@ -25,22 +25,11 @@ In [simpler_models.ipynb](./notebooks/simpler_models.ipynb), I used a Pipeline u
 
 The model doesn't show a very good result which will be discussed in ## Results.
 
-
 ## Using Pytorch to load a Bert Encoder model to get embeddings of lyrics
 
 The lyrics were put into a Bert encoder and was put through various simple models for classification. Accuracies and F1-Scores are discussed in ## Results. 
 
-BERT (Bidirectional Encoder Representations from Transformers) is a neural network architecture that was introduced in 2018 by Google researchers. It is a pre-trained transformer-based model that is trained on large amounts of text data to create embeddings, which can then be fine-tuned on specific tasks, such as text classification or question-answering.
-
-The core of BERT is a transformer, which is a type of neural network that processes sequential data, such as text. Unlike traditional sequential models, transformers are designed to allow for parallel processing of the input sequence, making them much faster and more efficient. Transformers work by breaking the input sequence into smaller chunks called "tokens", and then processing each token in parallel.
-
-In BERT, the input sequence is first tokenized using WordPiece, which is a subword tokenization algorithm that breaks words into smaller subwords based on their frequency in a large corpus of text. The resulting tokens are then fed into the transformer layers, which process the tokens in parallel to create a sequence of contextualized embeddings that represent the meaning of the input text.
-
-BERT is pre-trained on two large-scale unsupervised tasks, which are designed to capture different aspects of language understanding. The first task is called masked language modeling, which involves randomly masking out some of the tokens in the input sequence, and then training the model to predict the original tokens based on the context. The second task is called next sentence prediction, which involves predicting whether two input sentences are adjacent in a document or not.
-
-After pre-training, the BERT model can be fine-tuned on specific downstream tasks, such as sentiment analysis or text classification. This involves adding a task-specific layer on top of the pre-trained BERT model and fine-tuning the weights on a labeled dataset for the specific task.
-
-Overall, BERT has been shown to achieve state-of-the-art performance on a wide range of natural language processing tasks, and it has become a popular model for many NLP applications.
+BERT (Bidirectional Encoder Representations from Transformers) is a neural network architecture that was introduced in 2018 by Google researchers. It is a pre-trained transformer-based model that is trained on large amounts of text data to create embeddings, which can then be fine-tuned on specific tasks, such as text classification or question-answering. The core of BERT is a transformer, which is a type of neural network that processes sequential data, such as text. Unlike traditional sequential models, transformers are designed to allow for parallel processing of the input sequence, making them much faster and more efficient. Transformers work by breaking the input sequence into smaller chunks called "tokens", and then processing each token in parallel. In bERT the words are also tokenized based on their frequencies. In the BERT models used in this project, one was pretrained using Contrastive Learning on song lyrics data and named lyrics-bert. It is very small compared to other models. Therefore, the baseline distilbert-base-uncased shows a bit better results. 
 
 ## Results
 
