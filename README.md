@@ -25,9 +25,9 @@ In [simpler_models.ipynb](./notebooks/simpler_models.ipynb), I used a Pipeline u
 
 The model doesn't show a very good result which will be discussed in ## Results.
 
-## Using Pytorch to load a Bert Encoder model to get embeddings of lyrics
+## BERT + Pytorch
 
-The lyrics were put into a Bert encoder and was put through various simple models for classification. Accuracies and F1-Scores are discussed in ## Results. 
+In a second step, I stepped away from TF-IDF and used a pretrained BERT tokenizer and put the lyrics through a BERT model. The output is a encoded vector of the lyrics. The output is then passed to a neural network for classification. Multiple Neural Networks and BERT models were tested and accuracies + f1-scores are discussed in *Results*. 
 
 BERT (Bidirectional Encoder Representations from Transformers) is a neural network architecture that was introduced in 2018 by Google researchers. It is a pre-trained transformer-based model that is trained on large amounts of text data to create embeddings, which can then be fine-tuned on specific tasks, such as text classification or question-answering. The core of BERT is a transformer, which is a type of neural network that processes sequential data, such as text. Unlike traditional sequential models, transformers are designed to allow for parallel processing of the input sequence, making them much faster and more efficient. Transformers work by breaking the input sequence into smaller chunks called "tokens", and then processing each token in parallel. In bERT the words are also tokenized based on their frequencies. In the BERT models used in this project, one was pretrained using Contrastive Learning on song lyrics data and named lyrics-bert. It is very small compared to other models. Therefore, the baseline distilbert-base-uncased shows a bit better results. 
 
