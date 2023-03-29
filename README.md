@@ -45,3 +45,20 @@ In the confusion matrix we can see that the SVC shows very similar results to al
 ## More text processing
 
 In [text_processing.ipynb](./notebooks/text_processing.ipynb), the classification performance was tested when deleting contractions, using lemmatization (reducing words to their stem word ("running" to "run")), deleting stopwords, and combining all of these techniques. No improvements could be observed.
+
+## Setup
+
+* Clone the repository:
+
+```bash
+git clone [https://github.com/BrunoKreiner/nlp-mc-1](https://github.com/BrunoKreiner/nlp-mc-1)
+cd yourproject
+```
+
+* Create, activate a new conda environment and install the requirements:
+
+```bash
+conda create --name yourprojectenv python=3.x
+conda activate yourprojectenv
+pip install -r requirements.txt
+```
