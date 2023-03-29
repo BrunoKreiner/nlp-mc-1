@@ -7,8 +7,7 @@ As part of my 5th semester project, 49985 songs have been classified with a list
 ## Preprocessing
 
 The lyrics have already been cleaned from non alphanumeric characters. The cleanup can be seen in the following figure: 
-
-![Cleanup Flowchart](./reports/cleanup-flowchart.jpg) 
+<img src="./reports/cleanup-flowchart.jpg" width=50% height=50%>
 
 The preprocessing in [preprocess.ipynb](./notebooks/preprocess.ipynb) is aimed towards simplifying genre classification by reducing the total number of classes to N = 10 by using the most common word in a list of genres.
 
