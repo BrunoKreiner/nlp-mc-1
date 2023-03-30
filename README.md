@@ -51,8 +51,8 @@ In [text_processing.ipynb](./notebooks/text_processing.ipynb), the classificatio
 * Clone the repository:
 
 ```bash
-git clone [https://github.com/BrunoKreiner/nlp-mc-1](https://github.com/BrunoKreiner/nlp-mc-1)
-cd yourproject
+git clone https://github.com/BrunoKreiner/nlp-mc-1
+cd nlp-mc-1
 ```
 
 * Create, activate a new conda environment and install the requirements:
